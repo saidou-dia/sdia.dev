@@ -59,6 +59,7 @@ footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mut);font-size:
 <header><div class="w"><nav>
 <a class="logo" href="#top">SD<b>.</b>dia</a>
 <a class="l" href="#projets">Projets</a><a class="l" href="#experience">Expérience</a><a class="l" href="#competences">Compétences</a><a class="l" href="#contact">Contact</a>
+<button class="t" id="lg" aria-label="Language">EN</button>
 <button class="t" id="th" aria-label="Changer de thème">◐</button>
 </nav></div></header>
 
@@ -145,6 +146,70 @@ footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mut);font-size:
 <script>
 (function(){var r=document.documentElement,b=document.getElementById('th');
 b.addEventListener('click',function(){var d=r.getAttribute('data-theme')==='dark'||(!r.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);r.setAttribute('data-theme',d?'light':'dark')});})();
+</script>
+<script>
+(function(){
+var EN={"Projets":"Projects","Expérience":"Experience","Compétences":"Skills","Systèmes · Réseaux · Sécurité":"Systems · Networks · Security",
+"Je garde l’infrastructure":"I keep infrastructure","disponible":"available","et les accès":"and access","sécurisés":"secure",
+"Saidou DIA, administrateur Systèmes, Réseaux et Sécurité. Serveurs Windows et Linux, virtualisation, sauvegarde, supervision : je réduis les tâches manuelles et je renforce la sécurité des accès.":"Saidou DIA, Systems, Networks and Security Administrator. Windows and Linux servers, virtualization, backup, monitoring: I cut manual work and strengthen access security.",
+"Voir mes projets":"View my projects","7 ans":"7 years","d’expérience IT (2019–2026)":"of IT experience (2019–2026)","utilisateurs supportés (N2)":"users supported (L2)","postes déployés (Intune, Autopilot)":"PCs deployed (Intune, Autopilot)","onboarding automatisé":"automated onboarding",
+"01 / Projets":"01 / Projects","Infrastructures, labs et automatisation":"Infrastructure, labs and automation",
+"Infrastructure PME sécurisée":"Secure SME infrastructure",
+"Cluster Proxmox VE, 12 VM, Active Directory redondant, WSUS, Ceph, Proxmox Backup Server, FortiGate, VPN et routage L3 MikroTik.":"Proxmox VE cluster, 12 VMs, redundant Active Directory, WSUS, Ceph, Proxmox Backup Server, FortiGate, VPN and MikroTik L3 routing.",
+"Scénarios de maintenance de cluster reproductibles : vérifications multi-nœuds avec pdsh, mises à jour via Ansible, validation post-maintenance.":"Reproducible cluster maintenance scenarios: multi-node checks with pdsh, updates via Ansible, post-maintenance validation.",
+"Voir le dépôt ↗":"View repository ↗","Déploiement d’applications Intune":"Intune application deployment",
+"Guide pas à pas pour déployer des applications Win32, Microsoft Store et Microsoft 365 : prérequis, validation, gestion des erreurs.":"Step-by-step guide to deploy Win32, Microsoft Store and Microsoft 365 apps: prerequisites, validation, error handling.",
+"Labs Packet Tracer":"Packet Tracer labs","Routage":"Routing",
+"Collection de labs de routage statique et de dépannage, avec fichiers de simulation, captures de topologie et corrigés.":"Collection of static routing and troubleshooting labs, with simulation files, topology screenshots and solutions.",
+"Dépôt personnel d’expérimentations d’infrastructure et de pratique technique.":"Personal repository for infrastructure experiments and hands-on practice.",
+"Projet de formation IPREC : déménagement et modernisation d’une infrastructure de Paris vers Genève. Dossier d’architecture (DAT), sécurité, sauvegarde, supervision, PRA/PCA, migration, télécom, CI/CD et tests.":"IPREC training project: relocation and modernization of an infrastructure from Paris to Geneva. Architecture document (DAT), security, backup, monitoring, DR/BC plans, migration, telecom, CI/CD and tests.",
+"pxedep — serveur PXE automatisé":"pxedep — automated PXE server",
+"Projet de formation (automatisation) : script Bash qui installe un serveur PXE sur AlmaLinux. Il configure le réseau, DHCP, TFTP et NFS, puis fournit un fichier Kickstart pour un déploiement sans intervention.":"Training project (automation): Bash script that sets up a PXE server on AlmaLinux. It configures networking, DHCP, TFTP and NFS, then serves a Kickstart file for unattended deployment.",
+"02 / Expérience":"02 / Experience","Parcours professionnel":"Professional background",
+"Administrateur Systèmes, Réseaux et Sécurité":"Systems, Networks and Security Administrator",
+"150 utilisateurs et 30+ VM, équipe IT de 4, support N2 ; Active Directory et Exchange.":"150 users and 30+ VMs, IT team of 4, L2 support; Active Directory and Exchange.",
+"Comptes à privilèges renforcés : MFA, hardening, tiering, Zero Trust.":"Privileged accounts hardened: MFA, hardening, tiering, Zero Trust.",
+"Règles NAT et accès VPN sur pare-feu Stormshield.":"NAT rules and VPN access on Stormshield firewall.",
+"Alertes, sauvegardes Veeam et Synology automatisées ; onboarding de 2 h à 1 h.":"Automated alerts, Veeam and Synology backups; onboarding cut from 2 h to 1 h.",
+"2025 – Présent":"2025 – Present","Infrastructure sécurisée":"Secure infrastructure","Projet indépendant · Paris":"Independent project · Paris",
+"Cluster Proxmox, 12 VM, AD redondant, WSUS, Ceph, Proxmox Backup Server.":"Proxmox cluster, 12 VMs, redundant AD, WSUS, Ceph, Proxmox Backup Server.",
+"Automatisation PowerShell ; initiation Ansible et Terraform ; labs Azure et AWS.":"PowerShell automation; Ansible and Terraform basics; Azure and AWS labs.",
+"Administrateur Systèmes, Réseaux et Sécurité (stage)":"Systems, Networks and Security Administrator (internship)",
+"Migration de 130 utilisateurs et groupes Active Directory vers Entra ID via Entra Connect.":"Migrated 130 Active Directory users and groups to Entra ID via Entra Connect.",
+"Packaging et déploiement Win32 et Microsoft 365 via Intune.":"Packaging and deployment of Win32 and Microsoft 365 apps via Intune.",
+"Consultant IT, Systèmes, Réseaux et Sécurité":"IT Consultant, Systems, Networks and Security",
+"Support N2 de 600 collaborateurs multisites, environ 50 tickets par jour, équipe de 3.":"L2 support for 600 multi-site employees, about 50 tickets a day, team of 3.",
+"200+ postes Windows déployés via Intune et Autopilot.":"200+ Windows PCs deployed via Intune and Autopilot.",
+"Identités et accès (AD, Entra ID, Exchange), Windows, Linux et VMware.":"Identity and access (AD, Entra ID, Exchange), Windows, Linux and VMware.",
+"IT Support Spécialiste":"IT Support Specialist",
+"Environ 15 incidents N1/N2 par jour via ServiceNow, dans le respect des SLA.":"About 15 L1/L2 incidents a day via ServiceNow, within SLAs.",
+"Active Directory, Microsoft 365, Entra ID ; formations des nouveaux arrivants.":"Active Directory, Microsoft 365, Entra ID; training sessions for new joiners.",
+"Administrateur Systèmes et Réseaux":"Systems and Networks Administrator",
+"Systèmes, serveurs et équipements réseau ; comptes via AD, Exchange et Microsoft 365.":"Systems, servers and network equipment; accounts via AD, Exchange and Microsoft 365.",
+"Technicien Support":"Support Technician","AXA puis Mairie de Paris":"AXA then Paris City Hall",
+"Environ 8 postes déployés par jour ; diagnostic des pannes postes et imprimantes.":"About 8 PCs deployed a day; diagnosis of workstation and printer failures.",
+"03 / Compétences":"03 / Skills","Boîte à outils":"Toolbox",
+"Systèmes & virtualisation":"Systems & virtualization","Sauvegarde & supervision":"Backup & monitoring","Réseaux":"Networking","Sécurité & identités":"Security & identity","Microsoft & cloud":"Microsoft & cloud","Automatisation & méthodes":"Automation & methods","Routage L3":"L3 routing",
+"Diplômes (titres RNCP)":"Degrees (French RNCP titles)",
+"Titre RNCP niveau 6 (bac +3/4), certification professionnelle officielle enregistrée en France · IPREC / SUP DE VINCI, Paris · 2025":"RNCP level 6 title (3–4 years post-secondary), official professional qualification registered in France · IPREC / SUP DE VINCI, Paris · 2025",
+"Technicien Informatique, Systèmes et Réseaux":"IT, Systems and Networks Technician","Titre RNCP niveau 5 (bac +2) · IPREC, Paris · 2018":"RNCP level 5 title (2 years post-secondary) · IPREC, Paris · 2018",
+"BTS Informatique, Systèmes et Réseaux":"BTS in IT, Systems and Networks","Bac +2 · IAM, Dakar, Sénégal · 2014–2017":"2-year degree · IAM, Dakar, Senegal · 2014–2017",
+"Certifications officielles":"Official certifications","3 certifications officielles · 2023–2025":"3 official certifications · 2023–2025","Vérifier ↗":"Verify ↗","Voir les badges Credly ↗":"View Credly badges ↗",
+"Formations complémentaires (Udemy)":"Additional training (Udemy)","Formation CompTIA Network+ (N10-009)":"CompTIA Network+ (N10-009) course",
+"Cours Udemy validé le 31/03/2025 · préparation à l’examen.":"Udemy course completed March 31, 2025 · exam preparation.",
+"Formation Linux complète":"Complete Linux course","Cours Udemy validé le 14/03/2025.":"Udemy course completed March 14, 2025.",
+"Formation SCCM / Endpoint Configuration Manager":"SCCM / Endpoint Configuration Manager course","Cours Udemy validé le 21/03/2024.":"Udemy course completed March 21, 2024.","Certificat Udemy ↗":"Udemy certificate ↗",
+"Un projet d’infrastructure ou de sécurité ?":"An infrastructure or security project?",
+"Basé à Paris. Français courant, anglais professionnel. Ouvert aux opportunités en administration systèmes, réseaux, sécurité et cloud.":"Based in Paris. Fluent French, professional English. Open to opportunities in systems, network, security and cloud administration.",
+"Écrire un e-mail":"Send an e-mail"};
+var nodes=[],n,w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(x){var p=x.parentNode.nodeName;return(p==='SCRIPT'||p==='STYLE'||!x.nodeValue.trim())?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
+while(n=w.nextNode()){n._fr=n.nodeValue;nodes.push(n)}
+var b=document.getElementById('lg'),T=document.title,TE='Saidou DIA — Systems, Networks & Security Administrator';
+function set(l){nodes.forEach(function(x){var k=x._fr.trim();x.nodeValue=(l==='en'&&EN[k])?x._fr.replace(k,function(){return EN[k]}):x._fr});document.documentElement.lang=l;document.title=l==='en'?TE:T;b.textContent=l==='en'?'FR':'EN';try{localStorage.setItem('lang',l)}catch(e){}}
+var s='fr';try{s=localStorage.getItem('lang')||'fr'}catch(e){}
+set(s);
+b.addEventListener('click',function(){set(document.documentElement.lang==='en'?'fr':'en')});
+})();
 </script>
 </body>
 </html>
