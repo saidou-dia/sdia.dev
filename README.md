@@ -1,30 +1,35 @@
 # Saidou DIA — Portfolio
 
-A responsive, static portfolio for GitHub Pages, built with plain HTML, CSS and JavaScript. The visual direction is Dark Tech: midnight navy, turquoise accents, technical diagrams and restrained motion.
+Portfolio statique bilingue (français / anglais) de Saidou DIA, administrateur Systèmes, Réseaux et Sécurité.
 
-## Files
+🌐 **https://sdia.dev**
 
-- `index.html` — page content, SEO metadata, project and experience sections
-- `style.css` — responsive styling and visual components
-- `script.js` — mobile navigation, current year and reduced-motion-aware reveal effects
-- `CNAME` — custom domain `sdia.dev`
+## Fonctionnalités
 
-## Publish to GitHub Pages
+- Page unique, responsive (mobile et desktop)
+- Thème clair / sombre (suit les réglages de l'appareil, modifiable via le bouton ◐)
+- Bascule FR / EN (choix mémorisé dans le navigateur)
+- Sections : projets, expérience, compétences, diplômes, certifications, contact
 
-1. Download and extract the ZIP.
-2. Open the repository `https://github.com/saidou-dia/sdia.dev`.
-3. Replace the existing `index.html`, `style.css`, and `script.js` with these files. Keep `CNAME` containing exactly `sdia.dev`.
-4. Commit the changes to the branch currently configured for GitHub Pages (usually `main`).
-5. Wait for the Pages deployment to finish, then check `https://sdia.dev`.
+## Structure du dépôt
 
-This package does not change DNS, repository settings, or GitHub Pages settings. Keep the currently working DNS configuration unchanged.
+| Fichier | Rôle |
+|---|---|
+| `index.html` | Le site complet : contenu, style (CSS) et scripts (JavaScript) dans un seul fichier |
+| `CNAME` | Domaine personnalisé `sdia.dev` (à ne pas supprimer) |
+| `README.md` | Cette page |
 
-## Project links
+Aucun framework, aucune étape de build, aucune dépendance.
 
-Project links point to public repositories under `https://github.com/saidou-dia`. Descriptions are based on the public repository README where available; repositories with limited documentation are presented conservatively.
+## Publication (GitHub Pages)
 
-## Notes
+1. Modifier `index.html` dans ce dépôt.
+2. Valider la modification (commit) sur la branche configurée pour GitHub Pages (en général `main`).
+3. Attendre le déploiement, puis vérifier https://sdia.dev.
 
-- No framework, build step, or package installation is required.
-- Google Fonts is used for Manrope and DM Mono; system fonts remain as fallback if external fonts are unavailable.
-- Review the LinkedIn URL and all CV details before publishing.
+Le fichier `CNAME` doit contenir exactement `sdia.dev`.
+
+## Contact
+
+- LinkedIn : https://www.linkedin.com/in/saidoudia/
+- GitHub : https://github.com/saidou-dia
