@@ -28,6 +28,7 @@ button.t{background:none;border:1px solid var(--bd);color:var(--tx);border-radiu
 h1{font-size:clamp(34px,6vw,60px);line-height:1.08;margin:14px 0 18px;letter-spacing:-1.5px}
 h1 span{color:var(--ac)}
 .lead{max-width:640px;color:var(--mut);font-size:18px}
+.av{margin:18px 0 0;font-weight:600;color:var(--ac)}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .b{display:inline-block;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--bd)}
 .b.p{background:var(--ac);color:var(--bg);border-color:var(--ac)}
@@ -68,8 +69,10 @@ footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mut);font-size:
 <div class="k">Systèmes · Réseaux · Sécurité</div>
 <h1>Je garde l’infrastructure <span>disponible</span> et les accès <span>sécurisés</span>.</h1>
 <p class="lead">Saidou DIA, administrateur Systèmes, Réseaux et Sécurité. Serveurs Windows et Linux, virtualisation, sauvegarde, supervision : je réduis les tâches manuelles et je renforce la sécurité des accès.</p>
+<p class="av">● Disponible immédiatement · CDI ou freelance · Paris / Île-de-France</p>
 <div class="cta">
 <a class="b p" href="#projets">Voir mes projets</a>
+<a class="b" id="cv" href="CV_Saidou_DIA_FR.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
 <a class="b" href="https://github.com/saidou-dia">GitHub ↗</a>
 <a class="b" href="https://www.linkedin.com/in/saidoudia/">LinkedIn ↗</a>
 </div>
@@ -84,7 +87,7 @@ footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mut);font-size:
 <section id="projets"><div class="w">
 <div class="k">01 / Projets</div><h2>Infrastructures, labs et automatisation</h2>
 <div class="g">
-<div class="c"><h3>Infrastructure PME sécurisée</h3><p>Cluster Proxmox VE, 12 VM, Active Directory redondant, WSUS, Ceph, Proxmox Backup Server, FortiGate, VPN et routage L3 MikroTik.</p><div class="tg"><i>Proxmox</i><i>Ceph</i><i>FortiGate</i><i>MikroTik</i></div></div>
+<div class="c"><h3>Infrastructure PME sécurisée</h3><p>Cluster Proxmox VE, 12 VM, Active Directory redondant, WSUS, Ceph, Proxmox Backup Server, FortiGate, VPN et routage L3 MikroTik.</p><div class="tg"><i>Proxmox</i><i>Ceph</i><i>FortiGate</i><i>MikroTik</i></div><p></p><a class="r" href="https://github.com/saidou-dia/infrastructure-pme">Voir le dépôt ↗</a></div>
 <div class="c"><h3>Proxmox VE Labs</h3><p>Scénarios de maintenance de cluster reproductibles : vérifications multi-nœuds avec pdsh, mises à jour via Ansible, validation post-maintenance.</p><div class="tg"><i>Proxmox</i><i>Ansible</i><i>Linux</i></div><p></p><a class="r" href="https://github.com/saidou-dia/proxmox-labs">Voir le dépôt ↗</a></div>
 <div class="c"><h3>Déploiement d’applications Intune</h3><p>Guide pas à pas pour déployer des applications Win32, Microsoft Store et Microsoft 365 : prérequis, validation, gestion des erreurs.</p><div class="tg"><i>Intune</i><i>Microsoft 365</i><i>Windows</i></div><p></p><a class="r" href="https://github.com/saidou-dia/IntuneAppDeployment">Voir le dépôt ↗</a></div>
 <div class="c"><h3>Labs Packet Tracer</h3><p>Collection de labs de routage statique et de dépannage, avec fichiers de simulation, captures de topologie et corrigés.</p><div class="tg"><i>Routage</i><i>Packet Tracer</i></div><p></p><a class="r" href="https://github.com/saidou-dia/LabPacketTracer_Principal">Voir le dépôt ↗</a></div>
@@ -124,7 +127,7 @@ footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mut);font-size:
 <h2 style="margin-top:44px">Certifications officielles</h2>
 <div class="g">
 <div class="c"><h3>Microsoft Azure Administrator</h3><p>AZ-104 · 2024</p><a class="r" href="https://learn.microsoft.com/en-us/users/saidoudia/credentials/8d4ce7148422be6a">Vérifier ↗</a></div>
-<div class="c"><h3>AWS Certified</h3><p>3 certifications officielles · 2023–2025</p><a class="r" href="https://www.credly.com/users/saidou-dia.9e9eea32/badges/credly">Voir les badges Credly ↗</a></div>
+<div class="c"><h3>AWS Certified (Associate)</h3><p>SysOps Administrator · valide jusqu’au 31/01/2028</p><p>Developer · valide jusqu’au 06/01/2027</p><p>Solutions Architect · expirée le 08/07/2026</p><a class="r" href="https://www.credly.com/users/saidou-dia.9e9eea32/badges/credly">Voir les badges Credly ↗</a></div>
 </div>
 <h2 style="margin-top:44px">Formations complémentaires (Udemy)</h2>
 <div class="g">
@@ -135,7 +138,7 @@ footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mut);font-size:
 
 <section id="contact"><div class="w">
 <div class="k">04 / Contact</div><h2>Un projet d’infrastructure ou de sécurité ?</h2>
-<p class="lead">Basé à Paris. Français courant, anglais professionnel. Ouvert aux opportunités en administration systèmes, réseaux, sécurité et cloud.</p>
+<p class="lead">Basé à Paris, disponible immédiatement en CDI ou en freelance. Français courant, anglais professionnel. Ouvert aux opportunités en administration systèmes, réseaux, sécurité et cloud.</p>
 <div class="cta">
 <a class="b p" href="mailto:duuzey@hotmail.com">Écrire un e-mail</a>
 <a class="b" href="https://www.linkedin.com/in/saidoudia/">LinkedIn ↗</a>
@@ -200,12 +203,12 @@ var EN={"Projets":"Projects","Expérience":"Experience","Compétences":"Skills",
 "Formation Linux complète":"Complete Linux course","Cours Udemy validé le 14/03/2025.":"Udemy course completed March 14, 2025.",
 "Formation SCCM / Endpoint Configuration Manager":"SCCM / Endpoint Configuration Manager course","Cours Udemy validé le 21/03/2024.":"Udemy course completed March 21, 2024.","Certificat Udemy ↗":"Udemy certificate ↗",
 "Un projet d’infrastructure ou de sécurité ?":"An infrastructure or security project?",
-"Basé à Paris. Français courant, anglais professionnel. Ouvert aux opportunités en administration systèmes, réseaux, sécurité et cloud.":"Based in Paris. Fluent French, professional English. Open to opportunities in systems, network, security and cloud administration.",
-"Écrire un e-mail":"Send an e-mail"};
+"Basé à Paris, disponible immédiatement en CDI ou en freelance. Français courant, anglais professionnel. Ouvert aux opportunités en administration systèmes, réseaux, sécurité et cloud.":"Based in Paris, available immediately for permanent or freelance roles. Fluent French, professional English. Open to opportunities in systems, network, security and cloud administration.",
+"Écrire un e-mail":"Send an e-mail","● Disponible immédiatement · CDI ou freelance · Paris / Île-de-France":"● Available immediately · Permanent or freelance · Paris / Île-de-France","Télécharger mon CV":"Download my CV","SysOps Administrator · valide jusqu’au 31/01/2028":"SysOps Administrator · valid until Jan 31, 2028","Developer · valide jusqu’au 06/01/2027":"Developer · valid until Jan 6, 2027","Solutions Architect · expirée le 08/07/2026":"Solutions Architect · expired Jul 8, 2026"};
 var nodes=[],n,w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(x){var p=x.parentNode.nodeName;return(p==='SCRIPT'||p==='STYLE'||!x.nodeValue.trim())?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
 while(n=w.nextNode()){n._fr=n.nodeValue;nodes.push(n)}
 var b=document.getElementById('lg'),T=document.title,TE='Saidou DIA — Systems, Networks & Security Administrator';
-function set(l){nodes.forEach(function(x){var k=x._fr.trim();x.nodeValue=(l==='en'&&EN[k])?x._fr.replace(k,function(){return EN[k]}):x._fr});document.documentElement.lang=l;document.title=l==='en'?TE:T;b.textContent=l==='en'?'FR':'EN';try{localStorage.setItem('lang',l)}catch(e){}}
+function set(l){nodes.forEach(function(x){var k=x._fr.trim();x.nodeValue=(l==='en'&&EN[k])?x._fr.replace(k,function(){return EN[k]}):x._fr});document.documentElement.lang=l;var cv=document.getElementById('cv');if(cv)cv.href=l==='en'?'CV_Saidou_DIA_EN.pdf':'CV_Saidou_DIA_FR.pdf';document.title=l==='en'?TE:T;b.textContent=l==='en'?'FR':'EN';try{localStorage.setItem('lang',l)}catch(e){}}
 var s='fr';try{s=localStorage.getItem('lang')||'fr'}catch(e){}
 set(s);
 b.addEventListener('click',function(){set(document.documentElement.lang==='en'?'fr':'en')});
