@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Saidou DIA — Administrateur Systèmes, Réseaux & Sécurité</title>
 <meta name="description" content="Administrateur Systèmes, Réseaux et Sécurité : Windows/Linux, virtualisation, identités, sauvegarde, automatisation.">
+<link rel="canonical" href="https://sdia.dev/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sdia.dev/">
+<meta property="og:title" content="Saidou DIA — Administrateur Systèmes, Réseaux & Sécurité">
+<meta property="og:description" content="Windows/Linux, virtualisation, identités, sauvegarde, automatisation. Disponible immédiatement, Paris / Île-de-France.">
+<meta name="twitter:card" content="summary">
 <style>
 :root{--bg:#f6f8fb;--surf:#fff;--tx:#0e1a2b;--mut:#55627a;--bd:#dde3ec;--ac:#0a7a6a;--ac2:#0e5fd8;--chip:#eaf1f0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07111f;--surf:#0d1b2e;--tx:#e8eef8;--mut:#93a3bd;--bd:#1c2d47;--ac:#3ddbbf;--ac2:#6aa5ff;--chip:#12283a;color-scheme:dark}}
@@ -87,11 +94,10 @@ footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mut);font-size:
 <section id="projets"><div class="w">
 <div class="k">01 / Projets</div><h2>Infrastructures, labs et automatisation</h2>
 <div class="g">
-<div class="c"><h3>Infrastructure PME sécurisée</h3><p>Cluster Proxmox VE, 12 VM, Active Directory redondant, WSUS, Ceph, Proxmox Backup Server, FortiGate, VPN et routage L3 MikroTik.</p><div class="tg"><i>Proxmox</i><i>Ceph</i><i>FortiGate</i><i>MikroTik</i></div><p></p><a class="r" href="https://github.com/saidou-dia/infrastructure-pme">Voir le dépôt ↗</a></div>
+<div class="c"><h3>Infrastructure PME sécurisée</h3><p>Cluster Proxmox VE, 12 VM, Active Directory redondant, WSUS, Ceph, Proxmox Backup Server, FortiGate, VPN et routage L3 MikroTik.</p><div class="tg"><i>Proxmox</i><i>Ceph</i><i>FortiGate</i><i>MikroTik</i><i>VLAN</i></div><p></p><a class="r" href="https://github.com/saidou-dia/infrastructure-pme">Voir le dépôt ↗</a></div>
 <div class="c"><h3>Proxmox VE Labs</h3><p>Scénarios de maintenance de cluster reproductibles : vérifications multi-nœuds avec pdsh, mises à jour via Ansible, validation post-maintenance.</p><div class="tg"><i>Proxmox</i><i>Ansible</i><i>Linux</i></div><p></p><a class="r" href="https://github.com/saidou-dia/proxmox-labs">Voir le dépôt ↗</a></div>
 <div class="c"><h3>Déploiement d’applications Intune</h3><p>Guide pas à pas pour déployer des applications Win32, Microsoft Store et Microsoft 365 : prérequis, validation, gestion des erreurs.</p><div class="tg"><i>Intune</i><i>Microsoft 365</i><i>Windows</i></div><p></p><a class="r" href="https://github.com/saidou-dia/IntuneAppDeployment">Voir le dépôt ↗</a></div>
 <div class="c"><h3>Labs Packet Tracer</h3><p>Collection de labs de routage statique et de dépannage, avec fichiers de simulation, captures de topologie et corrigés.</p><div class="tg"><i>Routage</i><i>Packet Tracer</i></div><p></p><a class="r" href="https://github.com/saidou-dia/LabPacketTracer_Principal">Voir le dépôt ↗</a></div>
-<div class="c"><h3>Homelab</h3><p>Dépôt personnel d’expérimentations d’infrastructure et de pratique technique.</p><div class="tg"><i>Infrastructure</i><i>Lab</i></div><p></p><a class="r" href="https://github.com/saidou-dia/homelab">Voir le dépôt ↗</a></div>
 <div class="c"><h3>Migration-CYNA</h3><p>Projet de formation IPREC : déménagement et modernisation d’une infrastructure de Paris vers Genève. Dossier d’architecture (DAT), sécurité, sauvegarde, supervision, PRA/PCA, migration, télécom, CI/CD et tests.</p><div class="tg"><i>Architecture</i><i>PRA/PCA</i><i>CI/CD</i><i>Terraform</i></div><p></p><a class="r" href="https://github.com/saidou-dia/Migration-CYNA">Voir le dépôt ↗</a></div>
 <div class="c"><h3>pxedep — serveur PXE automatisé</h3><p>Projet de formation (automatisation) : script Bash qui installe un serveur PXE sur AlmaLinux. Il configure le réseau, DHCP, TFTP et NFS, puis fournit un fichier Kickstart pour un déploiement sans intervention.</p><div class="tg"><i>Bash</i><i>AlmaLinux</i><i>DHCP</i><i>TFTP</i><i>NFS</i><i>Kickstart</i></div><p></p><a class="r" href="https://github.com/saidou-dia/pxedep">Voir le dépôt ↗</a></div>
 </div></div></section>
@@ -204,7 +210,7 @@ var EN={"Projets":"Projects","Expérience":"Experience","Compétences":"Skills",
 "Formation SCCM / Endpoint Configuration Manager":"SCCM / Endpoint Configuration Manager course","Cours Udemy validé le 21/03/2024.":"Udemy course completed March 21, 2024.","Certificat Udemy ↗":"Udemy certificate ↗",
 "Un projet d’infrastructure ou de sécurité ?":"An infrastructure or security project?",
 "Basé à Paris, disponible immédiatement en CDI ou en freelance. Français courant, anglais professionnel. Ouvert aux opportunités en administration systèmes, réseaux, sécurité et cloud.":"Based in Paris, available immediately for permanent or freelance roles. Fluent French, professional English. Open to opportunities in systems, network, security and cloud administration.",
-"Écrire un e-mail":"Send an e-mail","● Disponible immédiatement · CDI ou freelance · Paris / Île-de-France":"● Available immediately · Permanent or freelance · Paris / Île-de-France","Télécharger mon CV":"Download my CV","SysOps Administrator · valide jusqu’au 31/01/2028":"SysOps Administrator · valid until Jan 31, 2028","Developer · valide jusqu’au 06/01/2027":"Developer · valid until Jan 6, 2027","Solutions Architect · expirée le 08/07/2026":"Solutions Architect · expired Jul 8, 2026"};
+"Écrire un e-mail":"Send an e-mail","RGPD":"GDPR","● Disponible immédiatement · CDI ou freelance · Paris / Île-de-France":"● Available immediately · Permanent or freelance · Paris / Île-de-France","Télécharger mon CV":"Download my CV","SysOps Administrator · valide jusqu’au 31/01/2028":"SysOps Administrator · valid until Jan 31, 2028","Developer · valide jusqu’au 06/01/2027":"Developer · valid until Jan 6, 2027","Solutions Architect · expirée le 08/07/2026":"Solutions Architect · expired Jul 8, 2026"};
 var nodes=[],n,w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(x){var p=x.parentNode.nodeName;return(p==='SCRIPT'||p==='STYLE'||!x.nodeValue.trim())?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
 while(n=w.nextNode()){n._fr=n.nodeValue;nodes.push(n)}
 var b=document.getElementById('lg'),T=document.title,TE='Saidou DIA — Systems, Networks & Security Administrator';
