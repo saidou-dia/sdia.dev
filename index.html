@@ -34,7 +34,7 @@ button.t{background:none;border:1px solid var(--bd);color:var(--tx);border-radiu
 .k{font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:2px;color:var(--ac);text-transform:uppercase}
 h1{font-size:clamp(32px,5.4vw,54px);line-height:1.1;margin:14px 0 18px;letter-spacing:-1.5px;text-wrap:balance}
 h1 span{color:var(--ac)}
-.lead{max-width:640px;color:var(--mut);font-size:18px}
+.lead{max-width:640px;color:var(--mut);font-size:18px;text-wrap:balance}
 .av{margin:18px 0 0;font-weight:600;color:var(--ac)}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .b{display:inline-block;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;border:1px solid var(--bd)}
@@ -75,7 +75,7 @@ footer{padding:34px 0;border-top:1px solid var(--bd);color:var(--mut);font-size:
 <div class="w hero">
 <div class="k">Systèmes · Réseaux · Sécurité</div>
 <h1>Des infrastructures <span>disponibles</span>,<br>des accès <span>sécurisés</span>.</h1>
-<p class="lead">Saidou DIA, administrateur Systèmes, Réseaux et Sécurité. Serveurs Windows et Linux, virtualisation, sauvegarde, supervision : je contribue à la fiabilité des infrastructures, au renforcement de la sécurité et à l’automatisation des tâches IT.</p>
+<p class="lead">Saidou DIA, administrateur Systèmes, Réseaux et Sécurité. Serveurs Windows et Linux, virtualisation, sauvegarde, supervision : je contribue à la fiabilité des infrastructures, au renforcement de la sécurité et à l’automatisation des tâches IT.</p>
 <p class="av">● Disponible immédiatement · CDI ou freelance · Paris / Île-de-France</p>
 <div class="cta">
 <a class="b p" href="#projets">Voir mes projets</a>
@@ -160,7 +160,7 @@ b.addEventListener('click',function(){var d=r.getAttribute('data-theme')==='dark
 (function(){
 var EN={"Projets":"Projects","Expérience":"Experience","Compétences":"Skills","Systèmes · Réseaux · Sécurité":"Systems · Networks · Security",
 "Des infrastructures":"Infrastructure that’s","disponibles":"available","des accès":"access that’s","sécurisés":"secure",
-"Saidou DIA, administrateur Systèmes, Réseaux et Sécurité. Serveurs Windows et Linux, virtualisation, sauvegarde, supervision : je contribue à la fiabilité des infrastructures, au renforcement de la sécurité et à l’automatisation des tâches IT.":"Saidou DIA, Systems, Networks and Security Administrator. Windows and Linux servers, virtualization, backup, monitoring: I contribute to infrastructure reliability, stronger security and the automation of IT tasks.",
+"Saidou DIA, administrateur Systèmes, Réseaux et Sécurité. Serveurs Windows et Linux, virtualisation, sauvegarde, supervision : je contribue à la fiabilité des infrastructures, au renforcement de la sécurité et à l’automatisation des tâches IT.":"Saidou DIA, Systems, Networks and Security Administrator. Windows and Linux servers, virtualization, backup, monitoring: I contribute to infrastructure reliability, stronger security and the automation of IT tasks.",
 "Voir mes projets":"View my projects","7 ans":"7 years","d’expérience IT (2019–2026)":"of IT experience (2019–2026)","utilisateurs supportés (N2)":"users supported (L2)","postes déployés (Intune, Autopilot)":"PCs deployed (Intune, Autopilot)","onboarding automatisé":"automated onboarding",
 "01 / Projets":"01 / Projects","Infrastructures, labs et automatisation":"Infrastructure, labs and automation",
 "Infrastructure PME sécurisée":"Secure SME infrastructure",
@@ -214,7 +214,7 @@ var EN={"Projets":"Projects","Expérience":"Experience","Compétences":"Skills",
 var nodes=[],n,w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(x){var p=x.parentNode.nodeName;return(p==='SCRIPT'||p==='STYLE'||!x.nodeValue.trim())?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
 while(n=w.nextNode()){n._fr=n.nodeValue;nodes.push(n)}
 var b=document.getElementById('lg'),T=document.title,TE='Saidou DIA — Systems, Networks & Security Administrator';
-function set(l){nodes.forEach(function(x){var k=x._fr.trim();x.nodeValue=(l==='en'&&EN[k])?x._fr.replace(k,function(){return EN[k]}):x._fr});document.documentElement.lang=l;var cv=document.getElementById('cv');if(cv)cv.href=l==='en'?'CV_Saidou_DIA_EN.pdf':'CV_Saidou_DIA_FR.pdf';document.title=l==='en'?TE:T;b.textContent=l==='en'?'FR':'EN';try{localStorage.setItem('lang',l)}catch(e){}}
+function set(l){nodes.forEach(function(x){var t=x._fr.trim(),k=t.replace(/\u00a0/g,' ');x.nodeValue=(l==='en'&&EN[k])?x._fr.replace(t,function(){return EN[k]}):x._fr});document.documentElement.lang=l;var cv=document.getElementById('cv');if(cv)cv.href=l==='en'?'CV_Saidou_DIA_EN.pdf':'CV_Saidou_DIA_FR.pdf';document.title=l==='en'?TE:T;b.textContent=l==='en'?'FR':'EN';try{localStorage.setItem('lang',l)}catch(e){}}
 var s='fr';try{s=localStorage.getItem('lang')||'fr'}catch(e){}
 set(s);
 b.addEventListener('click',function(){set(document.documentElement.lang==='en'?'fr':'en')});
